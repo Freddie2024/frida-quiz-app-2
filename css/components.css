@@ -48,6 +48,6 @@ input:checked + .switch:after {
   background-color: var(--active-color);
 }
 
-p {
+.hidden {
   display: none;
 }

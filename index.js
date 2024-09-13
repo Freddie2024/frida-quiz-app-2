@@ -13,11 +13,15 @@ bookmark.addEventListener("click", () => {
 
 const answerButton = document.querySelector(".question-card__button");
 answerButton.addEventListener("click", () => {
-    console.log("Yeah");
+    
+    const hiddenAnswer = document.querySelector(".question-card__answer");
+    hiddenAnswer.classList.toggle("hidden");
   });
 
-  
+
   /*
+
+console.log("Yeah");
 
   var button = document.getElementById('button'); // Assumes element with id='button'
 
