@@ -16,8 +16,23 @@ answerButton.addEventListener("click", () => {
     
     const hiddenAnswer = document.querySelector(".question-card__answer");
     hiddenAnswer.classList.toggle("hidden");
-  });
 
+    if (hiddenAnswer.classList.contains("hidden")) {
+        answerButton.textContent = "show answer";
+    } else {
+        answerButton.textContent = "hide answer";
+    }
+});
+/*
+
+    answerButton.textContent = "hide answer";
+
+
+    if (hiddenAnswer.display !== "none") {
+        text
+    }
+  });
+*/
 
   /*
 
