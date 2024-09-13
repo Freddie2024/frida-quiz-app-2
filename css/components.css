@@ -47,7 +47,3 @@ input:checked + .switch:after {
   bottom: 2px;
   background-color: var(--active-color);
 }
-
-.hidden {
-  display: none;
-}
