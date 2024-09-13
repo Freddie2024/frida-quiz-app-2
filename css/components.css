@@ -47,3 +47,7 @@ input:checked + .switch:after {
   bottom: 2px;
   background-color: var(--active-color);
 }
+
+p {
+  display: none;
+}
