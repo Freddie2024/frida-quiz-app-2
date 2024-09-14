@@ -6,5 +6,8 @@ form.addEventListener("submit", (event) => {
     console.log(formElements.yourQuestion.value);
     console.log(formElements.yourAnswer.value);
     console.log(formElements.tag.value);
+
+    const section = document.createElement("section");
+    document.form.append(section);
 });
 
