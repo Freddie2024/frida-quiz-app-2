@@ -1,3 +1,35 @@
+
+const questionInput = document.querySelector('[data-js="yourQuestion"]');
+const answerInput = document.querySelector('[data-js="yourAnswer"]');
+
+const charactersLeftElement = document.querySelector(
+    '[data-js="remaining-characters"]'
+  );
+
+  questionInput.addEventListener("input", (event) => {
+  charactersLeftElement.textContent = 150 - parseInt(event.target.value.length);
+});
+
+/*
+  const charactersLeftElement2 = document.querySelector(
+    '[data-js="remaining-characters2"]'
+  );
+ */
+
+/*
+  document.querySelectorAll('input-field').forEach(item => {
+    item.addEventListener("input", (event) => {
+    charactersLeftElement.textContent = 150 - parseInt(event.target.value.length);
+    }
+});
+*/
+
+/*
+  answerInput.addEventListener("input", (event) => {
+    charactersLeftElement2.textContent = 150 - parseInt(event.target.value.length);
+});
+*/
+
 const form = document.querySelector('[data-js="form"]');
 
 form.addEventListener("submit", (event) => {
