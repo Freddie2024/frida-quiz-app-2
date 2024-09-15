@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.question-card__button {
+.question-card__button, textarea, input {
   border-radius: 20px;
   padding: 5px 20px;
   border: 1px solid black;
