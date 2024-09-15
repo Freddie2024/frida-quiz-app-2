@@ -1,12 +1,19 @@
 const questionInput = document.querySelector('[data-js="yourQuestion"]');
-const answerInput = document.querySelector('[data-js="yourAnswer"]');
+
+
+
+const charactersLeftElement = document.querySelector(
+    '[data-js="remaining-characters"]'
+  );
+
 
 questionInput.addEventListener("input", (event) => {
       charactersLeftElement.textContent = 150 - parseInt(event.target.value.length);
   });
 
-
 const form = document.querySelector('[data-js="form"]');
+
+//  const answerInput = document.querySelector('[data-js="yourAnswer"]');
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
