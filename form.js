@@ -27,8 +27,8 @@ form.addEventListener("submit", (event) => {
     p.classList.add("question-card__answer");
 
     const div = document.createElement("div");
-    div.textContent = formElements.tag.value;
-    div.classList.add("question-card__tags");
+    div.textContent = "#" + formElements.tag.value.toLowerCase();
+    div.classList.add("question-card__tag");
 
    
     section.append(img, h2, button, p, div);
