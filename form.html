@@ -17,19 +17,28 @@
         <section>
         <h2 class="question-card__question">Your question:</h2>
         <label for="yourQuestion"></label>
-        <textarea name="yourQuestion" id="yourQuestion"></textarea>
-        </section>
+        <textarea 
+        name="yourQuestion" 
+        id="yourQuestion" 
+        data-js="yourQuestion"
+        maxlength="150"></textarea>
+    <p data-js="remaining-characters">characters left</p>    
+    </section>
 
         <section>
         <h2 class="question-card__question">Your answer:</h2>
         <label for="yourAnswer"></label>
-        <textarea name="yourAnswer" id="yourAnswer"></textarea>
+        <textarea 
+        name="yourAnswer" 
+        id="yourAnswer" 
+        data-js="yourAnswer"
+        maxlength="150"></textarea>
         </section>
 
         <section>
         <h2 class="question-card__question">Tag:</h2>
         <label for="tag"></label>
-        <input type="text" name="tag" id="tag">
+        <input type="text" name="tag" id="tag" maxlength="30"> 
     </section>
         <section>
         <button type="submit" class="question-card__button">Submit</button>

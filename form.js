@@ -1,3 +1,11 @@
+const questionInput = document.querySelector('[data-js="yourQuestion"]');
+const answerInput = document.querySelector('[data-js="yourAnswer"]');
+
+questionInput.addEventListener("input", (event) => {
+      charactersLeftElement.textContent = 150 - parseInt(event.target.value.length);
+  });
+
+
 const form = document.querySelector('[data-js="form"]');
 
 form.addEventListener("submit", (event) => {
