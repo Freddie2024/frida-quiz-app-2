@@ -41,7 +41,7 @@ form.addEventListener("submit", (event) => {
    
     const nerdButton = document.createElement("button");
     nerdButton.innerHTML = "&#129299;";
-    nerdButton.classList.add("question-card__icon");
+    nerdButton.classList.add("card__bookmark");
 
     const h2 = document.createElement("h2");
     h2.textContent = formElements.yourQuestion.value;
