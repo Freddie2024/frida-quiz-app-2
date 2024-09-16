@@ -1,5 +1,4 @@
 const questionInput = document.querySelector('[data-js="yourQuestion"]');
-const answerInput = document.querySelector('[data-js="yourAnswer"]');
 
 const charactersLeftElement = document.querySelector(
     '[data-js="remaining-characters"]'
@@ -9,43 +8,22 @@ const charactersLeftElement = document.querySelector(
   charactersLeftElement.textContent = 150 - parseInt(event.target.value.length) + " characters left";
 });
 
-/*
+const answerInput = document.querySelector('[data-js="yourAnswer"]');
 
-this code does not work 
-Uncaught TypeError: Cannot set properties of null (setting 'textContent')
-    at HTMLTextAreaElement.<anonymous>
-
-const charactersLeftElement2 = document.querySelector(
-    '[data-js="remaining-characters2"]'
+const remainingCharactersAnswer = document.querySelector(
+  '[data-js="remaining-characters__answer"]'
 );
 
 answerInput.addEventListener("input", (event) => {
-    charactersLeftElement2.textContent = 150 - parseInt(event.target.value.length) + " characters left";
-
+  remainingCharactersAnswer.textContent = 150 - parseInt(event.target.value.length) + " characters left";
 });
-*/
-
 
 /*
-this did also not work
-  const charactersLeftElement2 = document.querySelector(
-    '[data-js="remaining-characters2"]'
-  );
- */
-
-/*
-this did also not work
+this did not work
   document.querySelectorAll('input-field').forEach(item => {
     item.addEventListener("input", (event) => {
     charactersLeftElement.textContent = 150 - parseInt(event.target.value.length);
     }
-});
-*/
-
-/*
-this did also not work
-  answerInput.addEventListener("input", (event) => {
-    charactersLeftElement2.textContent = 150 - parseInt(event.target.value.length);
 });
 */
 
