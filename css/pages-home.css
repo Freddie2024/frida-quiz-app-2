@@ -5,6 +5,17 @@
   top: -15px;
 }
 
+.card__bookmark {
+  border: 2px solid rgb(0, 123, 255);
+  font-size: 1.5rem;
+  border-radius: 50% 50% 50% 10%;
+  box-shadow: darkblue(0, 0, 0, 0.24) 0 3px 8px;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: rgb(173, 255, 47);
+}
+
 .question-card__title {
   text-align: center;
 }

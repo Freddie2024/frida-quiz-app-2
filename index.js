@@ -1,15 +1,19 @@
 console.log("Hello World!")
 
-const bookmark = document.querySelector(".question-card__icon");
+const bookmark = document.querySelector(".card__bookmark");
 bookmark.addEventListener("click", () => {
     console.log("bookmarked");
-    const currentSrc = bookmark.src.split("/").pop();
-    if (currentSrc === "bookmark.png") {
-        bookmark.src = "./assets/bookmark_filled.png";
+   
+  const currentColor = window.getComputedStyle(bookmark).backgroundColor;
+
+    console.log(currentColor);
+
+    if (currentColor === "rgb(173, 255, 47)") {
+        bookmark.style.backgroundColor = "rgb(255, 0, 0)";
     } else {
-        bookmark.src = "./assets/bookmark.png";
+        bookmark.style.backgroundColor = "rgb(173, 255, 47)";
     }
-});
+    });
 
 const answerButton = document.querySelector(".question-card__button");
 answerButton.addEventListener("click", () => {
@@ -23,3 +27,12 @@ answerButton.addEventListener("click", () => {
         answerButton.textContent = "hide answer";
     }
 });
+
+
+ /*
+    const currentSrc = bookmark.src.split("/").pop();
+    if (currentSrc === "bookmark.png") {
+        bookmark.src = "./assets/bookmark_filled.png";
+    } else {
+        bookmark.src = "./assets/bookmark.png";
+    */

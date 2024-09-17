@@ -39,9 +39,9 @@ form.addEventListener("submit", (event) => {
 
     const section = document.createElement("section");
    
-    const img = document.createElement("img");
-    img.src = "./assets/bookmark.png";
-    img.classList.add("question-card__icon");
+    const nerdButton = document.createElement("button");
+    nerdButton.innerHTML = "&#129299;";
+    nerdButton.classList.add("card__bookmark");
 
     const h2 = document.createElement("h2");
     h2.textContent = formElements.yourQuestion.value;
@@ -60,7 +60,7 @@ form.addEventListener("submit", (event) => {
     div.classList.add("question-card__tag");
 
    
-    section.append(img, h2, button, p, div);
+    section.append(nerdButton, h2, button, p, div);
    
     form.append(section);
 });
